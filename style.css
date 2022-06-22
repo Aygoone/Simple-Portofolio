@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+:root {
+  --primary: #0096c7;
+  --primarydark: #023e8a;
+  --primarylight: #90e0ef;
+  --secondary: #fcbf49;
+  --hover: #caf0f8;
+  --light: #e9ecef;
+  --dark: #343a40;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  color: var(--primary);
+}
+
+.navatas {
+  background-color: var(--dark);
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: auto;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--light);
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 42px;
+  box-shadow: rgba(227, 4, 4, 0.25) 0px 6px 12px -2px, rgba(220, 9, 9, 0.74) 0px 3px 7px -3px;
+  z-index: 3;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-item a {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.nav-link {
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primarylight);
+}
+
+.nav-link2 {
+  transition: 0.6s ease;
+  color: var(--primary);
+  background-color: var(--primarylight);
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.nav-link2:hover {
+  color: var(--light);
+  transition: 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3 ease-in-out;
+  background-color: var(--light);
+}
+
+#button-back {
+  display: inline-block;
+  background-color: var(--dark);
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  position: fixed;
+  border-radius: 5px;
+  left: 10px;
+  bottom: 10px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+  opacity: 0.6s, visibility 0.5s;
+  opacity: 1;
+}
+
+#button-back i {
+  font-size: 32px;
+  color: var(--light);
+}
+
+#button-back:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+#button-back.show {
+  opacity: 1;
+}
+
+.content {
+  width: 77px;
+  margin: 50px auto;
+  font-family: 'Montserrat', sans-serif;
+  color: var(--light);
+  line-height: 1.9;
+}
+
+/* Main */
+main {
+  background-color: blue;
+}
+
+#home .container {
+  color: white;
+}
+/* Content */
+#content {
+  position: absolute;
+  padding: 15px;
+  float: left;
+  width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+}
+
+.home {
+  background: radial-gradient(circle, rgba(0, 150, 199, 1) 53%, rgba(202, 240, 248, 1) 100%);
+  padding-bottom: 100px;
+  padding-top: 50px;
+  text-align: center;
+  z-index: -1;
+}
+
+/* FOTO */
+.home .fotosaya {
+  border-radius: 50%;
+  width: 10rem;
+  margin: 20px;
+}
+
+/* About Me */
+.aboutme {
+  padding: 40px 5px;
+  background-color: white;
+  text-align: center;
+}
+
+#garis {
+  align-items: center;
+  background-color: black;
+  margin: 20px 300px;
+}
+.aboutme p {
+  padding: 60px 0px;
+  font-weight: 500;
+}
+
+/* My Skill */
+
+.myskill {
+  padding: 40px 5px;
+  background-color: white;
+  text-align: center;
+}
+
+.inner {
+  padding-top: 0px;
+}
+
+.header {
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+  padding: 1rem;
+  position: relative;
+}
+
+.header:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: var(--primary);
+}
+
+.container-skill {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 2rem;
+  padding: 2rem 80px;
+  font-size: 1.2rem;
+}
+/* My skill icon */
+
+.skill-box {
+  padding: 1.5rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.skill-tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 90px;
+  background-color: #1b8eb462;
+  border-radius: 45px;
+}
+
+.skill-title h3 {
+  color: var(--primary);
+  margin: 2.5rem;
+}
+
+.iconskill {
+  width: 35px;
+}
+
+.skill-box .deskripsi {
+  color: var(--dark);
+  font-size: 18px;
+}
+.myskill {
+  background-color: var(--light);
+}
+
+.deskripsi a {
+  color: var(--primarydark);
+  text-decoration: underline;
+}
+
+#button-back {
+  margin: 30px;
+}
+/* Project */
+section .myproject {
+  margin-top: 25px;
+}
+/* Wrapper */
+.wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  background: var(--light);
+  padding: 25px 30px 30px 30px;
+  border-radius: 5px;
+  top: 0;
+}
+
+.wrapper .judultab {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.wrapper .judulproject {
+  position: relative;
+  height: 50px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  /* background: red; */
+}
+
+.wrapper .judulproject label {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  line-height: 50px;
+  cursor: pointer;
+  color: var(--dark);
+  font-size: 17px;
+  z-index: 1;
+  position: relative;
+}
+
+input[type='radio'] {
+  display: none;
+}
+.wrapper .judulproject label i {
+  padding-right: 5px;
+  padding-left: 10px;
+}
+
+.wrapper .judulproject .slider {
+  position: absolute;
+  height: 100%;
+  width: 20%;
+  background: var(--primarydark);
+  border-radius: 5px;
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s ease-in;
+}
+#figma:checked ~ .judulproject label.figma,
+#design:checked ~ .judulproject label.design,
+#code:checked ~ .judulproject label.code {
+  color: #fff;
+}
+
+#design:checked ~ .judulproject .slider {
+  left: 30%;
+  width: 25%;
+}
+
+#code:checked ~ .judulproject .slider {
+  left: 65%;
+  width: 35%;
+}
+
+/* Footer */
+.footer-container {
+  background-color: var(--dark);
+  padding: 2rem;
+  margin-top: 5800px;
+  bottom: 0;
+}
+.footer {
+  width: 80%;
+  height: 15p;
+  background-color: var(--dark);
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.footer-heading a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+  color: var(--secondary);
+  transition: 0.3s ease;
+}
+
+/* Contact Me  */
+
+#contact {
+  background-color: var(--light);
+}
+
+.container-contact .subcontainer {
+  text-align: center;
+  padding: 50px;
+}
+
+.container-contact .subcontainer .isinya {
+  margin: 40px;
+  color: var(--primarydark);
+}
+
+.container-contact .subcontainer .isinya p {
+  margin: 25px;
+  color: var(--dark);
+}
+
+.container-contact .subcontainer .isinya .garis {
+  text-align: center;
+  color: #fff;
+  margin: 1px;
+  padding: 10px;
+  position: relative;
+}
+
+.container-contact .subcontainer .isinya .garis:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: var(--primary);
+}
+
+section .content .title {
+  font-size: 21px;
+  font-weight: 500px;
+}
+aside {
+  position: fixed;
+  padding: 20px;
+  margin-top: 380px;
+  margin-left: 1300px;
+  width: 12.5%;
+  color: black;
+  background: var(--primarydark);
+  border-radius: 10px;
+}
+
+aside h3 {
+  color: white;
+  align-items: right;
+  text-align: right;
+}
+
+aside .line {
+  background-color: white;
+  width: 150px;
+  height: 3px;
+  padding: 3px;
+  margin-top: 15px;
+  align-items: right;
+}
+
+aside a {
+  color: var(--light);
+}
+
+aside .socialmedia {
+  margin-top: 10px;
+  text-align: right;
+  align-items: center;
+}
+aside a:hover {
+  color: var(--secondary);
+}
+
+aside .socialmedia .uil {
+  color: white;
+  margin-left: 10px;
+  font-size: 24px;
+}
+@media (max-width: 1992px) {
+  aside {
+    margin-left: 1750px;
+    width: 10%;
+  }
+  .footer-container {
+    background-color: var(--dark);
+    padding: 2rem;
+    margin-top: 2800px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 825px) {
+  .footer-container {
+    background-color: var(--dark);
+    padding: 4rem;
+    margin-top: 3500px;
+    bottom: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--hover);
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+    z-index: 4;
+    margin-top: 60px;
+  }
+
+  .nav-menu a {
+    color: var(--primary);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    top: 0;
+  }
+  .container-skill {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 2rem;
+    padding: 2rem 80px;
+    font-size: 14px;
+  }
+  .wrapper .judulproject label {
+    font-weight: 600;
+  }
+
+  .wrapper .judulproject label i {
+    display: none;
+  }
+
+  section .content .title {
+    font-size: 16px;
+    font-weight: 500px;
+  }
+
+  aside {
+    margin-left: 625px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-container {
+    background-color: var(--primarydark);
+    padding: 4rem;
+    margin-top: 4500px;
+    bottom: 0;
+  }
+  .footer {
+    width: 80%;
+    height: 1rem;
+    background-color: var(--primarydark);
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+}
